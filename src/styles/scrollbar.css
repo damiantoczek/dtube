@@ -1,0 +1,14 @@
+main::-webkit-scrollbar, #navPanel::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fafafa;
+}
+main::-webkit-scrollbar-track, #navPanel::-webkit-scrollbar-track {
+  background-color: var(--background-dark);
+}
+main::-webkit-scrollbar-thumb, #navPanel::-webkit-scrollbar-thumb {
+  background-color: #fafafa;
+  border-top: 0;
+  border-right: 1px solid #0c0c0c;
+  border-bottom: 0;
+  border-left: 1px solid #0c0c0c;
+}/*# sourceMappingURL=scrollbar.css.map */

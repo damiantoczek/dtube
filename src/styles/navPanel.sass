@@ -1,0 +1,72 @@
+#navPanel
+    --left-margin: 20px
+    position: fixed
+    display: flex
+    flex-flow: column
+    top: 55px
+    bottom: 0
+    background-color: var(--background-dark) !important
+    color: #eee
+    z-index: 9
+    overflow-x: hidden
+    white-space: nowrap
+    transition: width ease-in-out var(--navPanel-transition-speed)
+    padding-bottom: 1em
+    & > .panel
+        &:not(:first-child)
+            border-top: 1px solid var(--background-color)
+
+#menu
+        padding: 1em 0
+        div
+            display: flex
+            align-items: center
+            width: 200px
+            &:hover
+                background: var(--background-color)
+                i
+                    color: red !important
+            a
+                display: flex
+                color: rgb(240, 240, 240)
+                font-size: 0.9em
+                padding: 0.75em 0
+                width: 100%
+            i
+                font-size: 1.3em
+                margin: 0 var(--left-margin)
+                text-align: center
+                width: 1em
+
+#hashtags
+    padding-bottom: 1em
+    transition: opacity ease-in-out 200ms
+    h4
+        padding: 1em var(--left-margin)
+        margin: 0
+        text-transform: uppercase
+        font-size: 0.8em
+    #hashtagsList
+        display: flex
+        flex-flow: column
+        a
+            padding: 0.2em var(--left-margin)
+            font-style: italic
+            font-size: 0.8em
+            &:hover
+                background-color: var(--background-color)
+
+#links
+    padding: 1em 0
+    text-align: center
+    font-size: 0.85em
+    transition: opacity ease-in-out 200ms
+    width: 200px
+    div.row
+        padding: 0.2em 0
+        a
+            &:hover
+                color: lime
+            &:not(:last-child)::after
+                content: "-"
+                margin-left: 0.3em

@@ -1,0 +1,74 @@
+@import 'icons.sass', 'navPanel.sass', 'search.sass', 'header.sass', 'main.sass', 'scrollbar.sass', 'video.sass'
+
+main.video
+    .player
+        position: relative
+        overflow: hidden
+        padding-top: 45%
+        iframe
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border: 0
+    .title
+        margin: 0.6% 1% 0.1em 1%
+        font-size: 2.5em
+    .panel
+        margin: 0 1% 1%
+        display: flex
+        align-items: center
+        gap: 2em
+    .keywords
+        display: flex
+        align-items: center
+        a
+            border: 1px solid #666
+            border-radius: 5px
+            color: #666
+            margin: 0.1em
+            padding: 0.1em 0.5em
+            transition: all var(--transition)
+            &:hover
+                border-color: #fff
+                color: #fff
+                
+
+
+@font-face
+    font-family: "Icons"
+    src: url("./fonts/icons.woff2")
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900,‌​700,500,300,100,400italic,700italic&subset=latin')
+
+html
+    --background-color: #181818
+    --background-dark: #111
+    --color-red: #f01a30
+    --color-yellow: #fbbd08
+    --navPanel-transition-speed: 200ms
+    --transition: ease-in-out 100ms
+
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+    transition: color var(--transition)
+
+button
+    cursor: pointer
+
+.red
+    color: #f01a30 !important
+
+.yellow
+    color: #fbbd08 !important
+
+body
+    display: flex
+    flex-flow: column
+    margin: 0
+    background-color: var(--background-color)
+    font-family: 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif
+    height: 100vh

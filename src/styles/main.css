@@ -1,0 +1,112 @@
+@media only screen and (max-width: 960px) {
+  .videos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 961px) {
+  .videos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+main {
+  grid-area: main;
+  overflow-y: auto;
+  margin-left: 59px;
+  transition: margin ease-in-out var(--navPanel-transition-speed);
+  color: #eee;
+}
+main.videos {
+  display: flex;
+  flex-flow: column;
+}
+main.videos section {
+  margin: 0.5em 2em;
+}
+main.videos section:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+main.videos section .panel {
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7em;
+}
+main.videos section .panel h2 {
+  font-weight: normal;
+}
+main.videos section .panel a {
+  opacity: 0.5;
+  font-size: 1.15em;
+}
+main.videos section .panel a:hover {
+  color: #fff;
+}
+main.videos section .panel button {
+  padding: 0.35em 2em;
+  background-color: transparent;
+  color: var(--color-yellow);
+  border: 1px solid;
+  border-color: #444;
+  border-radius: 3px;
+  margin: 0 0.5em;
+  transition: border-color var(--transition);
+}
+main.videos section .panel button:hover {
+  border-color: #fff;
+}
+main.videos section .container {
+  overflow: auto;
+}
+main.videos section .videos {
+  display: grid;
+  gap: 0.5em;
+}
+main.videos section .videos .video {
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  padding-bottom: 1em;
+}
+main.videos section .videos .video .preview {
+  position: relative;
+  cursor: pointer;
+}
+main.videos section .videos .video .preview img {
+  display: block;
+  width: 100%;
+}
+main.videos section .videos .video .preview div {
+  position: absolute;
+  bottom: 0.3em;
+  background-color: rgba(34, 36, 38, 0.75);
+  font-size: 0.7em;
+  padding: 0.2em 0.7em;
+}
+main.videos section .videos .video .preview div.votingpower {
+  left: 0.3em;
+}
+main.videos section .videos .video .preview div.votingpower i {
+  padding: 0 0.4em 0 0;
+}
+main.videos section .videos .video .preview div.duration {
+  right: 0.3em;
+}
+main.videos section .videos .video div.info > * {
+  margin: 0.4em;
+  font-size: 0.75em;
+}
+main.videos section .videos .video div.info .title {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+main.videos section .videos .video div.info .stats {
+  color: #bbb;
+}
+main.videos section .videos .video div.info .stats div {
+  display: inline;
+}
+main.videos section .videos .video div.info .stats div.dtc::after {
+  content: "DTC";
+  padding-right: 0.2em;
+}/*# sourceMappingURL=main.css.map */

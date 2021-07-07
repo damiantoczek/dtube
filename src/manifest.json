@@ -1,0 +1,15 @@
+{
+    "name": "D.Tube",
+    "short_name": "D.Tube",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#181818",
+    "description": "D.Tube App",
+    "orientation": "any",
+    "theme_color": "#f01a30",
+    "icons": [{
+        "src": "icons/dtubefavicon.png",
+        "sizes": "96x96",
+        "type": "image/png"
+    }]
+}

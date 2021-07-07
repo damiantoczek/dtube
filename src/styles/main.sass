@@ -1,0 +1,88 @@
+@media only screen and (max-width: 960px)
+    .videos
+        grid-template-columns: repeat(4, 1fr)
+
+@media only screen and (min-width: 961px)
+    .videos
+        grid-template-columns: repeat(4, 1fr)
+    
+main
+    grid-area: main
+    overflow-y: auto
+    margin-left: 59px
+    transition: margin ease-in-out var(--navPanel-transition-speed)
+    color: #eee
+    &.videos
+        display: flex
+        flex-flow: column
+        section
+            margin: 0.5em 2em
+            &:not(:last-child)
+                border-bottom: 1px solid #444
+            .panel
+                    color: #eee
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    font-size: 0.7em
+                    h2
+                        font-weight: normal
+                    a
+                        opacity: 0.5
+                        font-size: 1.15em
+                        &:hover
+                            color: #fff
+                    button
+                        padding: 0.35em 2em
+                        background-color: transparent
+                        color: var(--color-yellow)
+                        border: 1px solid
+                        border-color: #444
+                        border-radius: 3px
+                        margin: 0 0.5em
+                        transition: border-color var(--transition)
+                        &:hover
+                            border-color: #fff
+            .container
+                overflow: auto
+            .videos
+                display: grid
+                gap: 0.5em
+                .video
+                    display: flex
+                    flex-flow: column
+                    color: #fff
+                    padding-bottom: 1em
+                    .preview
+                        position: relative
+                        cursor: pointer
+                        img
+                            display: block
+                            width: 100%
+                        div
+                            position: absolute
+                            bottom: 0.3em
+                            background-color: rgba(34, 36, 38, 0.75)
+                            font-size: 0.7em
+                            padding: 0.2em 0.7em
+                            &.votingpower
+                                left: 0.3em
+                                i
+                                    padding: 0 0.4em 0 0
+                            &.duration
+                                right: 0.3em
+                    div.info
+                        & > *
+                            margin: 0.4em 
+                            font-size: 0.75em
+                        .title
+                            font-size: 0.9em
+                            font-weight: 500
+                        .stats
+                            color: #bbb
+                            div
+                                display: inline
+                                &.dtc
+                                    &::after
+                                        content: 'DTC'
+                                        padding-right: 0.2em

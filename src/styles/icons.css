@@ -1,0 +1,63 @@
+@charset "UTF-8";
+i.icon {
+  font-family: "Icons";
+  font-style: normal;
+  font-weight: normal;
+}
+i.icon.sidebar::before {
+  content: "";
+}
+i.icon.play::before {
+  content: "";
+}
+i.icon.bolt::before {
+  content: "";
+}
+i.icon.upload::before {
+  content: "";
+}
+i.icon.alarm::before {
+  content: "";
+}
+i.icon.search::before {
+  content: "";
+}
+i.icon.home::before {
+  content: "";
+}
+i.icon.grid::before {
+  content: "";
+}
+i.icon.rss::before {
+  content: "";
+}
+i.icon.fire::before {
+  content: "";
+}
+i.icon.trophy::before {
+  content: "";
+}
+i.icon.hourglass::before {
+  content: "";
+}
+i.icon.time::before {
+  content: "";
+}
+i.icon.history::before {
+  content: "";
+}
+i.icon.users::before {
+  content: "";
+}
+i.icon.gears::before {
+  content: "";
+}
+i.icon.question::before {
+  content: "";
+}
+i.icon.chevronL::before {
+  content: "";
+}
+i.icon.chevronR::before {
+  content: "";
+}/*# sourceMappingURL=icons.css.map */

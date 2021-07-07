@@ -1,0 +1,25 @@
+#search {
+  background-color: #1e1e1e !important;
+  padding: 0 !important;
+  border: none;
+  border-radius: 0.25em;
+  display: flex;
+  width: 100%;
+}
+#search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #f0f0f0 !important;
+  width: 100%;
+  padding: 0.75em;
+}
+#search i.search {
+  padding: 0.75em;
+  opacity: 0.5;
+  color: #f0f0f0 !important;
+  cursor: pointer;
+}
+#search i.search:hover {
+  opacity: 1;
+}/*# sourceMappingURL=search.css.map */
